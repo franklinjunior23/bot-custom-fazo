@@ -143,7 +143,7 @@ const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['TheMystic-Bot-MD', 'Safari', '2.0.0'] : methodCodeQR ? ['TheMystic-Bot-MD', 'Safari', '2.0.0'] : ['Ubuntu', 'Chrome', '20.0.04'],
+browser: opcion == '1' ? ['FrijoladaXit', 'Safari', '2.0.0'] : methodCodeQR ? ['FrijoladaXit', 'Safari', '2.0.0'] : ['Ubuntu', 'Chrome', '20.0.04'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -392,8 +392,8 @@ global.reloadHandler = async function(restatConn) {
   // busque la clave "handler" dentro del json y cámbiela si es necesario
   conn.welcome = '👋 ¡Bienvenido/a!\n@user';
   conn.bye = '👋 ¡Hasta luego!\n@user';
-  conn.spromote = '*[ ℹ️ ] @user Fue promovido a administrador.*';
-  conn.sdemote = '*[ ℹ️ ] @user Fue degradado de administrador.*';
+  conn.spromote = '*[ ℹ️ ] @user Fue promovido a un real chupapinga .*';
+  conn.sdemote = '*[ ℹ️ ] @user Fue violado brutalemente por frijol .*';
   conn.sDesc = '*[ ℹ️ ] La descripción del grupo ha sido modificada.*';
   conn.sSubject = '*[ ℹ️ ] El nombre del grupo ha sido modificado.*';
   conn.sIcon = '*[ ℹ️ ] Se ha cambiado la foto de perfil del grupo.*';
